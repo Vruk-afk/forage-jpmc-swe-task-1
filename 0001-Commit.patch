@@ -1,0 +1,25 @@
+From fe1b5a372a93e6ab032929cc035084eca0cbe50e Mon Sep 17 00:00:00 2001
+From: Vruk-afk <utkarshzerotwo@gmail.com>
+Date: Mon, 26 Feb 2024 19:08:09 +0530
+Subject: [PATCH] Commit
+
+---
+ client3.py | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/client3.py b/client3.py
+index baeb343..3ad561f 100644
+--- a/client3.py
++++ b/client3.py
+@@ -42,6 +42,8 @@ def getDataPoint(quote):
+ def getRatio(price_a, price_b):
+     """ Get ratio of price_a and price_b """
+     """ ------------- Update this function ------------- """
++    if(price_a==0 or price_b==0):
++        return
+     return price_a/price_b
+ 
+ 
+-- 
+2.34.1
+
